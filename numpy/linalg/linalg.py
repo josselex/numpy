@@ -2537,7 +2537,8 @@ def multi_dot(arrays):
 
     `multi_dot` chains `numpy.dot` and uses optimal parenthesization
     of the matrices [1]_ [2]_. Depending on the shapes of the matrices,
-    this can speed up the multiplication a lot.
+    this can speed up the multiplication a lot. For small matrices this can be 
+    much slower than doing it by hand.
 
     If the first argument is 1-D it is treated as a row vector.
     If the last argument is 1-D it is treated as a column vector.
